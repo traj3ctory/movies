@@ -1,0 +1,32 @@
+div.card {
+    border: 0;
+    width: fit-content;
+    div.card-body {
+      min-height: 17rem;
+      max-height: 17rem;
+      width: 100%;
+      border-radius: 4px;
+      padding: 0;
+      background: transparent;
+      overflow-y: hidden;
+      img {
+        height: inherit;
+        overflow-y: hidden;
+      }
+    }
+    div.movie_detail {
+      padding-top: 0.5rem;
+      color: #fff;
+      h6 {
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.1rem;
+        margin-bottom: 0;
+      }
+      small {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
+  }

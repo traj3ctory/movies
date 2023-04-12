@@ -1,0 +1,10 @@
+// @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+$warning: #E6B220;
+$primary: #3772FF;
+$info: #21354A;
+
+@import '~bootstrap/scss/bootstrap';
+@import './swiper.scss';
+@import './layout.scss';
+@import './utils.scss';
+@import './card.scss';
