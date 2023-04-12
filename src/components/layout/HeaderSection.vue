@@ -10,7 +10,10 @@
         /></router-link>
       </div>
       <div>
-        <div class="input-group d-md-flex d-none">
+        <div
+          class="input-group d-md-flex d-none"
+          title="Input at least 4 characters to search"
+        >
           <span class="input-group-text" id="basic-search"><SearchIcon /></span>
           <input
             type="text"
@@ -33,7 +36,10 @@
           class="dropdown_container container-fluid d-md-none d-block"
           v-if="showSearchBar"
         >
-          <div class="input-group">
+          <div
+            class="input-group"
+            title="Input at least 4 characters to search"
+          >
             <span class="input-group-text" id="basic-search"
               ><SearchIcon
             /></span>
@@ -51,6 +57,9 @@
           </div>
         </div>
         <div class="overlay_dropdown d-md-none d-block" v-if="showSearchBar" />
+        <div class="coming_soon mt-1" v-if="loading">
+          <div class="loading_dots" />
+        </div>
       </div>
     </div>
   </header>

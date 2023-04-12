@@ -68,3 +68,38 @@ a {
   transform: translateY(-20px);
   opacity: 0;
 }
+
+div.coming_soon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  div.loading_dots {
+    position: relative;
+    left: -9999px;
+    width: 7px;
+    height: 7px;
+    border-radius: 7px;
+    background-color: #f0f0f0;
+    color: #f0f0f0;
+    box-shadow: 9984px 0 0 0 #f0f0f0, 9999px 0 0 0 #f0f0f0,
+      10014px 0 0 0 #f0f0f0;
+    animation: dot-carousel 1.5s infinite linear;
+  }
+
+  @keyframes dot-carousel {
+    0% {
+      box-shadow: 9984px 0 0 -1px #f0f0f0, 9999px 0 0 1px #f0f0f0,
+        10014px 0 0 -1px #f0f0f0;
+    }
+    50% {
+      box-shadow: 10014px 0 0 -1px #f0f0f0, 9984px 0 0 -1px #f0f0f0,
+        9999px 0 0 1px #f0f0f0;
+    }
+    100% {
+      box-shadow: 9999px 0 0 1px #f0f0f0, 10014px 0 0 -1px #f0f0f0,
+        9984px 0 0 -1px #f0f0f0;
+    }
+  }
+}
