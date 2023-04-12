@@ -11,7 +11,7 @@ const useApi = async (
   params?: object
 ) => {
   const baseUrl = process.env.VUE_APP_API_BASE_URL;
-  const key = process.env.VUE_APP_API_KEY;
+  const key = process.env.VUE_APP_API_KEY || "k_4t4kiik5";
   const url =
     searchType === ""
       ? searchText === ""
